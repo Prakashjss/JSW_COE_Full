@@ -2,6 +2,344 @@
 /* css starting new from 02-12-2025  */
 
 
+
+
+/* Dashboard table Css Starts  */
+
+.dashboard_table_main_div{
+  margin: 10px auto;
+  width: 99%;
+  box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px,
+  rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px,
+  rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, 
+  rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+  rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px,
+  rgba(42, 51, 70, 0.03) 0px 10px 10px -5px,
+  rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+  border-radius: 10px;
+}
+
+#dashboard_table td{
+  font-size: 12px;
+  font-weight: 400;
+
+}
+#dashboard_table th{
+  font-size: 13px;
+  background: #F7F7F8;
+  font-weight: 400;
+  color: #060E20;
+  border-top: 1px solid #E3E8EE;
+  border-bottom: 1px solid #E3E8EE;
+}
+#dashboard_table .projectName a{
+  color: #1B2750;
+  font-weight: 400;
+}
+
+#dashboard_table .projectCode{
+  color: #64748B;
+  font-size: 11px;
+}
+#dashboard_table tbody td:first-child{
+  padding-left: 15px!important
+}
+.project_name_head{
+  width: 23%;
+  padding-left: 15px!important
+}
+
+.location_head{
+  width: 8%;
+}
+.project_manager_head{
+  width: 13%;
+}
+.savings_head{
+  width: 9%;
+}
+.investment_head{
+  width: 12%;
+}
+.progress_status_head{
+  width: 13%;
+}
+.charter_head{
+  width: 6%;
+}
+
+.charter .bi-file-earmark-plus {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.charter .bi-file-earmark-check{
+  font-size: 18px;
+}
+.table_main_div{
+  padding: 0px!important;
+}
+.table_heading{
+  padding: 20px 15px 20px 0px;
+}
+.location{
+  color: #64748B!important;
+}
+.manager{
+  color: #1B2750!important;
+}
+.savings{
+  color: #02A62B!important;
+}
+.investments{
+  color: #1B2750!important;
+}
+.progress_count{
+  color: #64748B!important;
+  font-size: 10px;
+  min-width: 30px;
+}
+.charter i{
+  font-size: 14px;
+}
+.badge_div .bg-primary{
+  color: #004FCF!important;
+  background: #DDEBFF!important;
+  font-weight: 400;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.badge_div .bg-success{
+  color: #02A62B!important;
+  background: #DDFFED!important;
+  font-weight: 400;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.badge_div .bg-warning{
+  color: #D47F00!important;
+  background: #FFF5CA!important;
+  font-weight: 400;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.progress .bg-primary{
+  background: #5DA5FC!important;
+  font-weight: 500;
+  padding: 4px 10px;
+}
+
+.progress .bg-success{
+  background: #48DD81!important;
+  font-weight: 500;
+  padding: 4px 10px;
+}
+
+.progress .bg-warning{
+  background: #F59E0B!important;
+  font-weight: 500;
+  padding: 4px 10px;
+}
+
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 28px;
+    border-radius: 5px;
+    padding-left: 35px;
+    border: none;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    color: #888;
+}
+.project_btn_div{
+  justify-content: flex-end;
+  width: 31.5%!important;
+  padding: 0px;
+}
+.table_head_right{
+  justify-content: flex-end;
+  padding: 0px;
+}
+.project_btn_div .btn{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 0px;
+  justify-content: center;
+}
+.table_head_first_div{
+  align-items: center;
+}
+.add_new_project_btn{
+  width: 130px!important;
+  margin-right: 12px;
+  margin-left: 0px;
+  background: radial-gradient(circle,rgba(237, 28, 36, 1) 0%, rgba(255, 47, 55, 1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 0px;
+  justify-content: center;
+  border: none!important;
+}
+.project_export_btn{
+  width: 80px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 0px;
+  justify-content: center;
+  border: none!important;
+}
+.project_export_btn i{
+  margin-right: 5px;
+}
+.add_new_project_btn i{
+  margin-right: 2px;
+}
+.table_head_left{
+  line-height: 16px;
+}
+.table_head_left h6{
+  margin-bottom: 0px;
+}
+.table_head_left span{
+  color: #7C8FAC;
+  font-size: 12px;
+}
+.stage_name{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-size: 10px;
+  width: max-content;
+}
+
+tr[row-id="1"] .charter .bi-file-earmark-plus{
+  color: #1A75EB;
+}
+
+tr[row-id="1"] .charter .bi-file-earmark-check{
+  color: #00980A;
+}
+.bi-three-dots-vertical{
+  color: #9B9FA6;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bi-plus-circle-dotted{
+  font-size: 16px;
+  margin-right: 4px!important;
+}
+.text-muted{
+  color: #7C8FAC;
+  font-weight: 400;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.stage_name{
+  display: flex;
+  align-items: center;
+}
+.stage_name .bi-circle-fill{
+  font-size: 6px;
+  margin-right: 5px;
+}
+.stage_name .text-purple{
+  color: #be3bf4!important;
+}
+.project_link{
+  text-decoration: none;
+}
+
+/* tab css start  */
+
+.nav_tabs{
+  margin: 10px;
+  width: 45%!important;
+}
+
+#projectTabs {
+    display: flex;
+    justify-content: space-between;
+    background: #e5e7eb99;
+    border-radius: 8px;
+    transition: 0.1s all ease-in-out;
+    border-bottom: 0px !important;
+    height: 34px;
+    padding: 2px;
+}
+
+#projectTabs .nav-item:hover,
+#projectTabs .nav-item:focus,
+#projectTabs .nav-item:focus-visible{
+  border: none!important;
+  outline:none!important ;
+}
+.nav-tabs .nav-link:hover{
+  border-color: none!important;
+}
+
+#projectTabs .nav-link:focus .nav-link,
+#projectTabs .nav-link:hover .nav-link,
+#projectTabs .nav-link:focus-visible .nav-link{
+  border: none!important;
+  outline:none!important ;
+}
+
+
+#projectTabs .nav-link {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #9B9FA6;
+    transition: 0.1s all ease-in-out;
+    border: none !important;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#projectTabsContent p{
+  color: black!important;
+}
+
+.nav-link.active{
+  color: #fff!important;
+  background: linear-gradient(90deg,rgba(39, 68, 160, 1) 100%, rgba(237, 221, 83, 1) 100%);
+  border: none!important;
+  border-radius: 8px;
+}
+
+.stages_main_div{
+  position: relative;
+}
+.stages_three_dot_div{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+
+
 .nav-link .badge{
     font-size: 0.5rem!important;
     vertical-align: top;

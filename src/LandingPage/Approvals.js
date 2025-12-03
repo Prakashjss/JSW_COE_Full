@@ -148,7 +148,7 @@
 import React, { useState } from "react";
 import SideBar from "../LandingPage/LeftSideBar";
 import Dashboardtable from "../LandingPage/DashboardTabSection";
-import "../CSS/LandingPage.css";
+// import "../CSS/LandingPage.css";
 import "../CSS/MyApprovals.css";
 
 const MyApprovals = () => {
