@@ -1,0 +1,90 @@
+[
+  {
+    "id":"1",
+    "projectName": {"project":"Install VFD at pumps of cooling tower", "projectCode":"COEDL24SEED1804N"},
+    "location": "Dolvi",
+    "manager": "Ashish Vilas Sontakke",
+    "savings": "₹12.5 Cr",
+    "investments": "₹8.2 Cr",
+    "progress": { "status": "On Time", "percent": 85 },
+    "charter": { "doc": "bi bi-file-earmark-plus", "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "S1 Verification - Pending", "since": "30 days" }
+  },
+  {
+    "id":"2",
+    "projectName": {"project":"Increase Benzol recovery at COP2", "projectCode":"COEDL24SEED1787N"},
+    "location": "Vasind",
+    "manager": "Pravin Joshi",
+    "savings": "₹9.5 Cr",
+    "investments": "₹5.2 Cr",
+    "progress": { "status": "Completed", "percent": 100 },
+    "charter": { "doc": "bi bi-file-earmark-plus", "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Closed" }
+  },
+  {
+    "id":"3",
+    "projectName": {"project":"Utilize Underfiring Gas CV Control to reduce", "projectCode":"COEDL24SEED1880N"},
+    "location": "Salem",
+    "manager": "Girish G Jadhav",
+    "savings": "₹7.8 Cr",
+    "investments": "₹4.1 Cr",
+    "progress": { "status": "Delayed", "percent": 20 },
+    "charter": {"doc": "bi bi-file-earmark-plus","approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Execution" }
+  },
+  {
+    "id":"4",
+    "projectName": {"project":"Install VFD at pumps of cooling tower", "projectCode":"COEDL24SEED1804N"},
+    "location": "Vijayanagar",
+    "manager": "Sanktosh Kumar Vishwakarma",
+    "savings": "₹9.5 Cr",
+    "investments": "₹5.2 Cr",
+    "progress": { "status": "Completed", "percent": 100 },
+    "charter": { "doc": "bi bi-file-earmark-plus", "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Closed" }
+  },
+  {
+    "id":"5",
+    "projectName": {"project":"Increase Benzol recovery at COP2", "projectCode":"COEDL24SEED1787N"},
+    "location": "Anjar",
+    "manager": "Girish G Jadhav",
+    "savings": "₹7.8 Cr",
+    "investments": "₹4.1 Cr",
+    "progress": { "status": "Delayed", "percent": 20 },
+    "charter": { "doc": "bi bi-file-earmark-plus",  "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Execution" }
+  },
+  {
+    "id":"6", 
+    "projectName": {"project":"Utilize Underfiring Gas CV Control to reduce", "projectCode":"COEDL24SEED1880N"},
+    "location": "Dolvi",
+    "manager": "Pravin Joshi",
+    "savings": "₹9.5 Cr",
+    "investments": "₹5.2 Cr",
+    "progress": { "status": "Completed", "percent": 100 },
+    "charter": { "doc": "bi bi-file-earmark-plus", "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Closed" }
+  },
+  {
+    "id":"7",
+    "projectName": {"project":"Increase Benzol recovery at COP2", "projectCode":"COEDL24SEED1787N"},
+    "location": "Dolvi",
+    "manager": "Girish G Jadhav",
+    "savings": "₹7.8 Cr",
+    "investments": "₹4.1 Cr",
+    "progress": { "status": "Delayed", "percent": 20 },
+    "charter": { "doc": "bi bi-file-earmark-plus",  "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Execution" }
+  },
+  {
+    "id":"8",
+    "projectName": {"project":"Utilize Underfiring Gas CV Control to reduce", "projectCode":"COEDL24SEED12879N"},
+    "location": "Dolvi",
+    "manager": "Pravin Joshi",
+    "savings": "₹2.8 Cr",
+    "investments": "₹1.1 Cr",
+    "progress": { "status": "Delayed", "percent": 45 },
+    "charter": { "doc": "bi bi-file-earmark-plus",  "approval": "bi bi-file-earmark-check"},
+    "stages": { "name": "Execution" }
+  }
+]

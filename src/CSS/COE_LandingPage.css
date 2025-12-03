@@ -1,0 +1,1129 @@
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 80%!important;
+}
+
+.logo {
+  height: 40px;
+  padding: 4px;
+  margin: 0px 20px;
+}
+
+.header_nav {
+  display: flex;
+  gap: 40px;
+}
+
+.header_nav a {
+  text-decoration: none;
+  color: #2744A0;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+}
+
+.header_nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -17px;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+}
+
+.header_right {
+  background: linear-gradient(to right, #2744A0, #d51a4a);
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+  width: 20%!important;
+}
+
+.admin_box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+}
+.user_icon {
+    height: 25px;
+    margin: 0px!important;
+}
+.admin-arrow .bi{
+    font-size: 12px;
+}
+
+/* COE_Slider CSS Start  */
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+   height: 65vh;
+  min-height: 430px;
+   background-color: #000; 
+}
+
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; 
+  z-index: 0;
+}
+
+.carousel-item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.89;
+}
+
+
+.slide-overlay {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  /* transform: translate(-45%, -50%); */
+  color: white;
+}
+.slide-overlay h2{
+    text-align: justify;
+    font-size: 48px;
+}
+.slide-overlay h6{
+    text-align: justify;
+    font-weight: 400;
+}
+.slide-overlay span{
+    color: #2744A0;
+}
+.custom-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    transform: translate(0px, -40px);
+}
+
+.indicator-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.active-dot {
+  position: relative;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.active-dot::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+}
+
+
+/* about COE CSS Start  */
+
+.about-container {
+  background-image: url('../../public/images/about_image.webp');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  align-items: stretch;
+  display: flex;  
+}
+.about-container h5{
+    margin-bottom: 30px;
+}
+
+.eye_icon{
+    width: 50px;
+    padding-bottom: 40px;
+}
+.grid_icon{
+    width: 50px;
+    padding-bottom: 40px;
+}
+.about{
+    padding: 70px 70px 130px 70px;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #000;
+}
+.about h3{
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.about p{
+    font-size: 22px;
+}
+.Our_Vision{
+    background-color: #2744A0;
+    height: 100%;
+    padding: 50px 40px;
+    opacity: 0.85;
+}
+.Our_Mission{
+    height: 100%;
+    padding: 50px 40px;
+    background-color: #EC1C24;
+    opacity: 0.9;
+}
+
+/* Our Impact CSS Start  */
+
+.impact-container{
+    padding: 60px 60px 20px 60px;
+    background-image: url('../../public/images/Impact_bg_image.webp');
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.impact-container .col-4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.impact-container h2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 400;
+}
+.impact-container .impact-value{
+    font-size: 38px;
+}
+
+.impact-container .impact-label{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Our Leader CSS Start  */
+
+.leader-container{
+    padding: 60px 100px 0px 100px;
+    background-image: url('../../public/images/Leader_bg_image.webp');
+    background-size: cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.leader-container .img-fluid{
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(71, 70, 70) !important;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 1;
+  font-family: "bootstrap-icons" !important;
+}
+
+.slick-prev:before {
+  content: "\F284";
+}
+
+.slick-next:before {
+  content: "\F285"; 
+}
+
+.slick-prev,
+.slick-next {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.slick-slider{
+    padding: 0px 50px;
+}
+.leader_title{
+    color: #EC1C24;
+    font-size: 36px;
+    font-weight: 400;
+}
+.leader-container .leader_quote{
+    color: #2744A0;
+    font-weight: 300;
+    width: 70%;
+    font-size: 32px;
+    line-height: 1.35;
+    margin-top: 15px;
+}
+.leader_description{
+    color: #5F5F5F;
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+}
+
+
+/* Stories CSS Start  */
+
+.stories-container{
+   position: relative;
+  background-image:   linear-gradient(to bottom right, rgba(39, 68, 160, 0.45), rgb(255, 0, 104)),
+    url('../../public/images/about_image.webp'),
+    url('../../public/images/Impact_bg_image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  width: 100%; 
+}
+.stories-container .new_tag{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px 10px;
+    background: #EC1C24;
+    color:#fff;
+    font-size: 12px;
+}
+
+/* 
+.stories-container {
+  position: relative;
+  background-image:
+    linear-gradient(to right, rgba(39, 68, 160, 0.45), rgba(213, 26, 74, 0.45)),
+    url('../../public/images/about_image.webp'),
+    url('../../public/images/Impact_bg_image.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  min-height: 1400px;
+  width: 100%;
+} */
+
+.stories-container h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 60px;
+    color: #fff;
+}
+
+.inner_stories_container{
+    padding: 20px 70px;
+ }
+
+.line_with_text {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.line_with_text span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.line_with_text hr {
+    flex: 1;   
+    border: 0;
+    border-top: 2px solid #a7a7a7; 
+    margin: 0;
+}
+.row_carousel_container{
+    margin-right: calc(-.5 * var(--bs-gutter-x))!important;
+    margin-left: calc(-.5 * var(--bs-gutter-x))!important;
+    gap: 0px;
+}
+
+.main_image_div {
+    position: relative;
+}
+.main_image_div .main_image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.image_over_text{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #fff;
+    width: 45%;
+}
+.side_image_text {
+    color: #fff;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.right_side_slider{
+    height: 400px;
+    overflow-x: scroll;
+    border-left: 1px solid #89898991;
+    padding-left: 20px;
+}
+
+.slide_title{
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.image_side{
+    width: 176px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.slide_title_side{
+    font-weight: 400;
+    font-size: 16px;
+    width: 80%;
+}
+.left_side_slider{
+    padding-right: 20px;
+}
+
+.side_image_text span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Best Project CSS Start  */
+
+.carousel-indicators [data-bs-target] {
+  background-color: white !important;
+}
+.slide-btn {
+  width: 10px;
+  height: 11px;
+  border: none;
+  border-radius: 50%;
+  background-color:transparent;
+  transition: all 0.3s ease;
+  border: 1px solid gray;
+  margin: 3px;
+}
+
+.slide-btn.active {
+  width: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.main_left_div{
+    position: relative;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.main_left_div .main_image{
+    height: 458px;
+    object-fit: cover;
+    width: 100%;
+}
+.main_left_div .new_tag{
+    right: 20px;
+}
+.image_title_text{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.slide_details{
+    font-size: 20px;
+    font-weight: 300;
+}
+.right_side_div_inner span{
+    font-size: 14px;
+}
+
+.carousel-indicators-custom {
+  position: absolute;
+  bottom: 20px; /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.card-image{
+    height: 150px;
+    width: 96%;
+    object-fit: cover;
+}
+.bottom_image{
+    cursor: pointer;
+    padding-left: 0px;
+}
+.bottom_image .slide_title_side{
+    margin-bottom: 10px;
+}
+.bottom_image .side_image_text{
+    padding-left: 0px;
+}
+
+
+
+/* COE Journey CSS Start  */
+
+
+
+.timeline-container {
+  width: 95%;
+  margin: 60px auto;
+  position: relative;
+  min-height: 110vh;
+  
+  background-image: url('../../public/images/Journey_COE_bg.webp');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #ED1C24;
+}
+
+.timeline-svg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  transform: rotate(333deg);
+}
+
+.timeline-content {
+  position: relative;
+  z-index: 1;
+}
+
+.year-block {
+  position: absolute;
+  width: 260px;
+  padding: 14px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.year-block:hover {
+  transform: translateY(-4px);
+}
+
+.card-left {
+  text-align: left;
+}
+
+.card-right {
+  text-align: left;
+}
+
+.year-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0056d2;
+  margin-bottom: 8px;
+}
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.year-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.highlight {
+  color: #ED1C24;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.savings_1 {
+  color: #22C55E;
+  margin-top: 20px!important;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.savings_2{
+    color: #060E20;
+    font-weight: 400;
+}
+
+.item_description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5F5F5F;
+}
+
+.journey_icon{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/* Impact Savings CSS Starts  */
+
+.impact_row_first{
+    flex-wrap: nowrap;
+    background-image: linear-gradient(47deg,rgba(0, 0, 0, 1) 28%, rgba(39, 68, 160, 1) 100%), url('../../public/images/money_bag_bg.webp');
+    opacity: 0.8;
+    /* background: linear-gradient(347deg,rgba(0, 0, 0, 1) 8%, rgba(39, 68, 160, 1) 100%); */
+    /* background-blend-mode: multiply;
+    background-repeat: round;
+    background-size: contain; */
+     background-blend-mode: multiply;
+    background-repeat: round;
+    background-size: cover;
+    background-position: top;
+}
+.savings_head_new{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.savings_project_count{
+    font-size: 40px;
+    font-weight: 400;
+}
+.savings_project_title{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.first_left_div_savings{
+    padding: 80px 50px;
+    border-right: 2px solid red;
+}
+.first_right_div_savings_inner{
+    border-right: 1px solid #CDCFD2;
+}
+.first_right_div_savings img{
+    height: 70px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer CSS Start  */
+
+.footer-container {
+  background: #E7E7E9;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  padding: 80px 120px;
+  flex-wrap: wrap;
+  background-size: contain;
+}
+
+
+
+.footer-logos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-right: 40px;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5F5F5F;
+  width: 70%;
+}
+
+.footer-description .highlight {
+  color: #2744A0;
+  font-weight: 400;
+}
+
+.footer-links h4,
+.footer-company h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #060E20;
+}
+
+.footer-links ul,
+.footer-company ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-company li {
+  margin-bottom: 15px;
+}
+
+.footer-links a,
+.footer-company a {
+  text-decoration: none;
+  color: #5F5F5F;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+.footer-links a:hover,
+.footer-company a:hover {
+  color: #0056d2;
+}
+
+.footer-bottom {
+  background: linear-gradient(to right, #2744a0, #d51a4a);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 50px;
+  font-size: 13px;
+}
+.footer-bottom p{
+    margin-bottom: 0px!important;
+}
+
+.footer-bottom-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.3s;
+}
+
+.footer-bottom-links a:hover {
+  opacity: 0.8;
+}
+
+/* testing purpose added start  */
+
+    /*  Base Container  */
+    .journey-container {
+      position: relative;
+      text-align: center;
+      padding: 60px 0 250px;
+      background: #fff;
+      /* font-family: "poppins", sans-serif; */
+      overflow: hidden;
+       background-image: url('../../public/images/Journey_COE_bg.webp');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /*  Title  */
+    .journey-title {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 160px;
+      margin-top: 0px;
+      color: #c21818;
+    }
+
+    /*  Rotated SVG Wave  */
+    .journey-wave {
+      width: 100%;
+      height: 230px;
+      overflow: visible;
+      transform: rotate(338deg);
+      transform-origin: center;
+    }
+
+    /*  Wave Drawing Animation  */
+    .wave-path {
+      fill: none;
+      stroke: #2744A0;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 1280;
+      stroke-dashoffset: 1200;
+      animation: drawWave 8s ease forwards;
+    }
+
+    @keyframes drawWave {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /*  Cards Section  */
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: -200px;
+      position: relative;
+      gap: 20px;
+    }
+
+    /*  Card Animation  */
+    .journey-container .card {
+      border-radius: 12px;
+      padding: 20px 25px;
+      width: 250px;
+      text-align: left;
+      opacity: 0;
+      transform: translateY(100px);
+      animation: slideUp 1s ease forwards;
+      border: none;
+      background: transparent;
+   }
+
+    /* Card animation delay & Position */
+    .journey-container .card:nth-child(1) { 
+        animation-delay: 0.5s; 
+        position: relative;
+        bottom: -195px;
+        left: 150px;
+    }
+    .journey-container .card:nth-child(2) { 
+        animation-delay: 1.5s;
+        position: relative;
+        bottom: -30px;
+        left: 40px;
+     }
+    .journey-container .card:nth-child(3) { 
+        animation-delay: 2.7s; 
+        position: relative;
+        bottom: 85px;
+        left: 10px;
+    }
+    .journey-container .card:nth-child(4) { 
+        animation-delay: 5s; 
+        position: relative;
+        bottom: 180px;
+        left: -50px;
+    }
+
+    /*  Slide from bottom  */
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /*  Card Content  */
+    .journey-container .card h4 {
+      color: #0d3b87;
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .journey-container .card p {
+      color: #c21818;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+
+    .disc {
+      font-size: 14px;
+      color: #5F5F5F;
+      margin-bottom: 12px;
+    }
+
+    .savings_value {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .savings_value span {
+      color: #22c55e;
+      font-weight: 600;
+    }
+    .journey-container .cards img{
+      width: 45px;
+      background: #fff;
+      padding: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+    }
+
+/* testing purpose added end  */
+
+
+
+
+
+
+/* Media Query for all section related to COE Landing Page Laptop 14 and 15.6  */
+@media screen and (max-width:1440px){
+    .slide-overlay h2{
+        font-size: 38px;
+    }
+    .about h3{
+        font-size: 32px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .about{
+        padding: 70px;
+    }
+    .Our_Vision p{
+        font-size: 15px;
+    }
+    .Our_Mission p{
+        font-size: 15px;
+    }
+    .impact-container h2{
+        font-size: 32px;
+    }
+    .impact-container .impact-value{
+        font-size: 28px;
+    }
+    .impact-container .impact-label{
+        font-size: 18px;
+    }
+    .leader-container .leader_quote{
+        width: 80%;
+        font-size: 28px;
+    }
+    .leader_description{
+        font-size: 16px;
+    }
+    .leader_title{
+        font-size: 32px;
+    }
+    .stories-container h2{
+        font-size: 32px;
+    }
+    .timeline-title{
+        font-size: 32px;
+    }
+    .savings_head_new{
+        font-size: 32px;
+    }
+    .savings_project_count{
+        font-size: 32px;
+    }
+    .savings_project_title{
+        font-size: 20px;
+    }
+    .first_right_div_savings img{
+        width: 80px;
+        height: 80px;
+    }
+    .slide_title_side{
+        font-size: 14px;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .side_image_text span{
+        font-size: 10px;
+    }
+    .right_side_div_inner{
+        margin-top: 10px!important;
+    }
+    .carousel-indicators-custom{
+        bottom: 30px;
+    }
+    .image_title_text{
+        font-size: 28px;
+    }
+    .slide_details{
+        font-size: 16px;
+    }
+    .right_side_div_inner span{
+        font-size: 12px;
+    }
+    .main_left_div .main_image{
+        height: 400px;
+    }
+    .timeline-svg{
+        width: 98.5%;
+        height: 390px;
+        transform: rotate(338deg);
+        left: 1%;
+    }
+    .timeline-content .year-block:nth-child(1){
+        top: 285px!important;
+        left: 70px!important;
+    }
+    .timeline-content .year-block:nth-child(2){
+        top: 145px!important;
+        left:290px!important;
+    }
+    .timeline-content .year-block:nth-child(3){
+        top: 50px!important;
+        left: 570px!important;
+    }
+    .timeline-content .year-block:nth-child(4){
+        top: -25px!important;
+        left: 870px!important;
+    }
+    .icon-circle{
+        padding: 7px!important;
+    }
+    .highlight{
+        font-size: 12px;
+    }
+    .item_description{
+        font-size: 12px;
+    }
+    .savings_1{
+        font-size: 12px;
+    }
+    .year-block{
+        width: 220px!important;
+    }
+    .footer-top{
+        padding: 80px 80px;
+    }
+
+    /* newly changes for the coe journey css */
+
+    .journey-container {
+        padding-bottom: 270px;
+    }
+    .journey-container .journey-title{
+      font-size: 32px;
+    }
+    .journey-container .cards img{
+      width: 40px;
+    }
+    .journey-container .card h4{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .journey-container .card p{
+      margin-top: 20px;
+    }
+    .journey-wave {
+        height: 210px;
+    }
+    .journey-container .card:nth-child(1) { 
+        bottom: -215px;
+        left: 75px;
+    }
+    .journey-container .card:nth-child(2) { 
+        bottom: -65px;
+        left: 20px;
+    }
+    .journey-container .card:nth-child(3) { 
+        bottom: 40px;
+        left: 40px;
+    }
+    .journey-container .card:nth-child(4) { 
+        bottom: 125px;
+        left: 25px;
+    }
+    .disc{
+        font-size: 12px;
+    }
+    .savings_value{
+        font-size: 12px;
+    }
+
+}
+

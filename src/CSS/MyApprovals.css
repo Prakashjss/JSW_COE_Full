@@ -1,0 +1,111 @@
+
+/* css starting new from 02-12-2025  */
+
+
+.nav-link .badge{
+    font-size: 0.5rem!important;
+    vertical-align: top;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+/* Badge color for active tab */
+.nav-tabs .nav-link.active .badge {
+    background-color: #0A51C3 !important;
+    color: #fff;
+}
+
+/* Badge color for inactive tab */
+.nav-tabs .nav-link .badge {
+    background-color: #E5E7E9 !important; 
+    color: #64748B;
+}
+
+.action_column .btn{
+  font-size: 12px;
+  border-radius: 10px;
+  font-weight: 400;
+  border: none;
+}
+.action_column .btn-success{
+  background-color: #22C55E;
+  color: #fff;
+}
+
+.action_column .btn-danger{
+  background-color: #EF4444;
+  color: #fff;
+}
+
+ .modal.show .modal-dialog {
+    position: fixed;     
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    margin: 0;           
+}
+#approavlOrReject .modal_header_inner{
+    display: flex;
+    flex-direction: column;
+}
+
+#approavlOrReject .modal_header_inner span{
+  font-size: 10px;
+  color: #64748B;
+}
+#comment_area{
+  resize: none;
+  padding: 8px ;
+  color: #000;
+}
+#approavlOrReject .modal-header{
+  background: none;
+  border: none;
+  display: flex;
+  align-items: flex-start;
+}
+#approavlOrReject .modal-title{
+  font-size: 16px;
+}
+#approavlOrReject .modal-header .btn-close{
+  font-size: 12px;
+}
+#approavlOrReject h6{
+  font-size: 14px;
+}
+#approavlOrReject .modal-footer .btn-primary{
+  background: #02A62B;
+  border: none;
+}
+
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.status-accepted {
+  color: #22C55E;
+  background: #DCFCE7;
+}
+
+.status-rejected {
+  color: #EF4444;
+  background: #FEE2E2;
+}
+
+.status-timestamp {
+  margin-top: 4px;
+}
+
+.status-badge .bi{
+    font-size: 12px;
+}
