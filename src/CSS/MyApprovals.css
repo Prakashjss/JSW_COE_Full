@@ -447,3 +447,19 @@ tr[row-id="1"] .charter .bi-file-earmark-check{
 .status-badge .bi{
     font-size: 12px;
 }
+ .modal-body p{
+  font-size: 12px;
+}
+.modal-header{
+  padding: 15px 20px 0px 20px;
+  border-bottom: none;
+  background: none!important;
+}
+ .modal-footer {
+  border-top:none;
+}
+.modal-body textarea{
+  color:#000!important;
+  padding:10px!important;
+  resize: none!important;
+}

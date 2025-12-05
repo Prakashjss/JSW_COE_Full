@@ -303,10 +303,10 @@ const MyApprovals = () => {
       {/* Modal */}
       {showActionModal && (
         <div
-          className="modal fade show d-block"
+          className="modal fade show d-block" 
           style={{ background: "rgba(0,0,0,0.5)" }}
         >
-          <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-dialog modal-dialog-centered" id="approavlOrReject">
             <div className="modal-content">
 
               <div className="modal-header">
