@@ -37,20 +37,39 @@ const newsItems = [
   },
 ];
 
+
+
 const COEBestProjects = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev === newsItems.length - 1 ? 0 : prev + 1));
+  };
+
+  const handlePrev = () => {
+    setActiveIndex((prev) => (prev === 0 ? newsItems.length - 1 : prev - 1));
+  };
+
   return (
     <div className="best-slide-container pt-4">
-      <div className="row mb-4">
+      <div className="row mb-4 position-relative">
+
+        {/* Prev Button */}
+        <button  className="btn btn-light prev-btn" onClick={handlePrev}>
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        {/* Next Button */}
+        <button  className="btn btn-light next-btn" onClick={handleNext}>
+        <i class="bi bi-chevron-right"></i>
+        </button>
+
         {/* Left Image */}
         <div className="col-8 main_left_div">
           <img src={newsItems[activeIndex].img} alt={newsItems[activeIndex].title} className="img-fluid main_image"/>
-          {newsItems[activeIndex].tag && ( <div className="new_tag bg-warning">{newsItems[activeIndex].tag}</div> )}
-            <div className="carousel-indicators-custom">
-                {newsItems.map((_, idx) => (
-                <button key={idx} onClick={() => setActiveIndex(idx)} className={`slide-btn ${activeIndex === idx ? "active" : ""}`}></button>))}
-            </div>
+          {newsItems[activeIndex].tag && (
+            <div className="new_tag bg-warning">{newsItems[activeIndex].tag}</div>
+          )}
         </div>
 
         {/* Right Text */}
@@ -61,14 +80,15 @@ const COEBestProjects = () => {
         </div>
       </div>
 
-      {/* --- Bottom Thumbnails --- */}
+      {/* -- Bottom Thumbnails -- */}
       <div className="row">
         {newsItems.map((item, idx) => (
           <div key={item.id} className="col-3 bottom_image"
             onClick={() => setActiveIndex(idx)}>
-            <div className={`card text-white border-0 ${ activeIndex === idx ? "border border-warning" : ""}`} style={{ backgroundColor: "transparent" }}>
+            <div className={`card text-white border-0 ${ activeIndex === idx ? "border border-warning" : ""}`}
+              style={{ backgroundColor: "transparent" }}>
               <div className="position-relative">
-                <img src={item.img} alt={item.title} className="card-image"/>
+                <img src={item.img} alt={item.title} className="card-image" />
               </div>
               <div className="card-body side_image_text">
                 <p className="slide_title_side">{item.title}</p>
